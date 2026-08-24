@@ -1,0 +1,14 @@
+from sklearn.tree import DecisionTreeClassifier
+
+# Fever, Cough, Headache
+X = [[1,1,1], [1,1,0], [0,1,1], [0,0,1]]
+y = ["Flu", "Cold", "Flu", "Migraine"]
+
+model = DecisionTreeClassifier()
+model.fit(X, y)
+
+f = int(input("Fever (1/0): "))
+c = int(input("Cough (1/0): "))
+h = int(input("Headache (1/0): "))
+
+print("Predicted Disease:", model.predict([[f,c,h]])[0])
