@@ -1,0 +1,8 @@
+text = input("Enter news: ").lower()
+
+fake = ["shocking", "secret", "miracle", "100% true", "click here"]
+
+if any(word in text for word in fake):
+    print("Result: FAKE NEWS")
+else:
+    print("Result: REAL NEWS")
