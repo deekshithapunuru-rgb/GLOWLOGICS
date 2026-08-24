@@ -1,0 +1,8 @@
+# Student Performance Prediction
+
+h = float(input("Study hours: "))
+a = float(input("Attendance (%): "))
+
+marks = (h * 5) + (a * 0.5)
+
+print("Predicted Marks:", round(marks, 2))
