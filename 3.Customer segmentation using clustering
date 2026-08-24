@@ -1,0 +1,9 @@
+data = [[20,20000],[25,25000],[30,30000],
+        [45,60000],[50,70000],[55,80000]]
+
+# Simple customer segmentation
+for c in data:
+    if c[1] < 40000:
+        print(c, "Low Income")
+    else:
+        print(c, "High Income")
